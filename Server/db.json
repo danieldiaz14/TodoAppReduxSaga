@@ -2,33 +2,13 @@
   "todos": [
     {
       "title": "Daniel",
-      "description": "asJeffasdasd",
+      "description": "Apple",
       "id": 1
     },
     {
-      "title": "albert",
-      "description": "aed",
+      "title": "Albert",
+      "description": "Dinner",
       "id": 2
-    },
-    {
-      "title": "eric",
-      "description": "eric",
-      "id": 3
-    },
-    {
-      "title": "Charles",
-      "description": "Brank",
-      "id": 4
-    },
-    {
-      "title": "Fred",
-      "description": "Make",
-      "id": 5
-    },
-    {
-      "title": "Zed3",
-      "description": "Albert",
-      "id": 6
     }
   ]
 }

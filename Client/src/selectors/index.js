@@ -1,5 +1,5 @@
-import * as selectors from './todosSelector';
+import * as selectors from "./todosSelector";
 
 export default {
-    ...selectors
+  ...selectors,
 };
