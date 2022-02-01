@@ -1,14 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "Daniel",
-      "description": "Apple",
-      "id": 1
-    },
-    {
-      "title": "Albert",
-      "description": "Dinner",
-      "id": 2
-    }
-  ]
+  "todos": []
 }

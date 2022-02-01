@@ -47,11 +47,11 @@ class EditTodo extends React.Component {
         <button
           onClick={this.onSubmit}
           type="submit"
-          className="ui primary button"
+          className="ui button inverted primary"
         >
           Submit
         </button>
-        <button onClick={this.props.getTodos} className="ui negative button">
+        <button onClick={this.props.getTodos} className="ui button inverted red">
           Back
         </button>
       </form>

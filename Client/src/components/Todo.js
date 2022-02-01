@@ -5,10 +5,10 @@ const Todo = (props) => {
   return (
     <div className="item">
       <div className="right floated content">
-        <button className="ui green button" onClick={onSelect}>
+        <button className="ui button inverted green" onClick={onSelect}>
           Edit Todo
         </button>
-        <button className="ui negative button" onClick={onDelete}>
+        <button className="ui button inverted red" onClick={onDelete}>
           Delete
         </button>
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import * as Types from "../actions/types";
 
 const INITIALIZE = {

@@ -56,7 +56,7 @@ class CreateTodo extends React.Component {
           />
         </div>
         <button
-          className="ui primary button"
+          className="ui button inverted primary"
           type="submit"
           onClick={this.onSubmit}
         >
