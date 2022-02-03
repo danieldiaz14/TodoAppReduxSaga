@@ -6,7 +6,7 @@ import TodosList from "./TodosList";
 import CreateTodo from "./CreateTodo";
 
 class App extends React.Component {
-  checkIfRenderCreateTodo = () => {
+  checkIfEditing = () => {
     const { editTodo } = this.props.todos;
     if (!editTodo) {
       return (
@@ -19,8 +19,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        {this.checkIfRenderCreateTodo()}
+      <div className="ui container">
+        {this.checkIfEditing()}
         <TodosList />
       </div>
     );

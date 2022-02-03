@@ -1,15 +1,23 @@
 import * as types from "./types";
 
-const Types = {
-  ...types,
-};
+const {
+  CREATE_TODO,
+  DELETE_TODO,
+  GET_ALL_TODOS,
+  GET_ALL_TODOS_SUCCESS,
+  UPDATE_TODO,
+  SELECT_DISPLAY_LIST,
+  SELECT_TODO,
+  SORT_BY_DESCRIPTION,
+  SORT_BY_TITLE,
+} = types;
 
 export const getTodos = () => ({
-  type: Types.GET_ALL_TODOS,
+  type: GET_ALL_TODOS,
 });
 
 export const getTodosSuccess = ({ todosList, editTodo }) => ({
-  type: Types.GET_ALL_TODOS_SUCCESS,
+  type: GET_ALL_TODOS_SUCCESS,
   payload: {
     todosList: [...todosList],
     editTodo: editTodo,
@@ -17,7 +25,7 @@ export const getTodosSuccess = ({ todosList, editTodo }) => ({
 });
 
 export const createTodo = ({ title, description }) => ({
-  type: Types.CREATE_TODO,
+  type: CREATE_TODO,
   payload: {
     title,
     description,
@@ -25,14 +33,14 @@ export const createTodo = ({ title, description }) => ({
 });
 
 export const deleteTodo = (todoId) => ({
-  type: Types.DELETE_TODO,
+  type: DELETE_TODO,
   payload: {
     todoId: todoId,
   },
 });
 
 export const updateTodo = ({ id, title, description }) => ({
-  type: Types.UPDATE_TODO,
+  type: UPDATE_TODO,
   payload: {
     title: title,
     description: description,
@@ -41,18 +49,18 @@ export const updateTodo = ({ id, title, description }) => ({
 });
 
 export const selectTodo = () => ({
-  type: Types.SELECT_TODO,
+  type: SELECT_TODO,
 });
 
 export const selectTodoList = (type) => ({
-  type: Types.SELECT_DISPLAY_LIST,
+  type: SELECT_DISPLAY_LIST,
   payload: type,
 });
 
 export const sortByTitle = () => ({
-  type: Types.SORT_BY_TITLE
+  type: SORT_BY_TITLE,
 });
 
 export const sortByDescription = () => ({
-  type: Types.SORT_BY_DESCRIPTION
-})
+  type: SORT_BY_DESCRIPTION,
+});
